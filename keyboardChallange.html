@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Challenge</title>
+    <link rel="stylesheet" href="keyboardChallenge.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Keyboard Challenge</h1>
+
+        <div class="settings">
+            <div class="difficulty-block">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Hard</option>
+                    <option value="insane">Insane</option>
+                </select>
+            </div>
+
+            <label class="penalty-label">
+                <input type="checkbox" id="penalty"> Penalty Mode (wrong key loses point)
+            </label>
+        </div>
+
+        <div id="letter"></div>
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 0s</div>
+
+        <div id="feedback" class="feedback"></div>
+        <div id="difficulty-hint"></div> <!-- Increase/Decrease buttons appear here AFTER game ends -->
+
+        <button id="start">Start</button>
+    </div>
+
+    <script src="keyboardChallenge.js"></script>
+</body>
+</html>

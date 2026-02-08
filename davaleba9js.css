@@ -1,0 +1,38 @@
+div{
+    height: 220px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#taskList {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+#taskList li {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done {
+    color: gray;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

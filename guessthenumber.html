@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess the Number Game</title>
+  <link rel="stylesheet" href="guessthenumber.css" />
+</head>
+<body>
+
+
+  <div id="start-screen">
+    <button id="start-btn">Start</button>
+  </div>
+
+
+  <div id="game-container" style="display: none;">
+    <h1>Guess Random Number</h1>
+    <input type="number" id="guess-input" placeholder="შეიყვანეთ რიცხვი 1-დან 100-მდე" />
+    <button id="check-btn">Check Number</button>
+    <p id="feedback"></p>
+    <p>ცდების რაოდენობა: <span id="attempts">0</span></p>
+    <button id="try-again-btn" style="display: none;">Try Again</button>
+    <button id="start-again-btn" style="display: none;">Start Again</button>
+  </div>
+
+  <script src="guessthenumber.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header span{
+    color: blue;
+    margin-left: 15px;
+    font-size: 20px;
+}
+div img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.header{
+    display: flex;
+    background-color: white;
+    box-shadow: 3px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    border-bottom: 5px;
+    border-color: gray;
+    position: sticky;
+    top: 20px;
+    z-index: 21;
+}
+
+::-webkit-scrollbar {      width: 15px;
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.pirveli{
+    background-color: lightcyan;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+
+}
+.pirveli h1 {
+    font-weight: bold;
+    margin-left: 20px;
+    margin: 20px;
+
+}
+.pirveli button{
+background-color: blue;
+color: white;
+padding: 12px;
+border: 3px;
+border-radius: 12%;
+margin-left: 20px;
+}
+
+.pirveli p{
+margin-left: 20px;
+}
+
+.carieli{
+    background-color: lightslategrey;
+    width: 100%;
+   height: 480px;
+   display: flex;
+   justify-items: center;
+   align-items: center;
+   z-index: 2;
+}
+
+.meore{
+    background-color: white;
+    width: 100%;
+    z-index: 3;
+}
+
+.carieli .chat{
+    height: 240px;
+    width: 180px;
+    z-index: 4;
+    background-color: white;
+    border: 10px solid black;
+}
+
+.carieli img{
+    z-index: 20;
+    position: absolute;
+    top: 100%;
+    left: 95%;
+}
+    
+

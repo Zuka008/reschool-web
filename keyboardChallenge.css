@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 70px; 
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    width: 600px;       
+    max-width: 90%;      
+}
+
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.difficulty-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#difficulty {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1e3c53;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    transition: 0.2s;
+}
+
+#difficulty:hover, #difficulty:focus {
+    background-color: #2a4d6f;
+}
+
+.penalty-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: crimson;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#letter {
+    font-size: 5em;
+    color: #1db954;
+    margin: 20px 0;
+    transition: color 0.15s;
+}
+
+#score, #timer {
+    font-size: 1.5em;
+    margin: 8px 0;
+    color: #fff;
+}
+
+.feedback {
+    font-size: 1.2em;
+    margin: 12px 0;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #1db954;
+    color: #fff;
+    transition: 0.2s all;
+}
+
+button:hover {
+    background-color: #17a74a;
+    transform: scale(1.1);
+}
+
+#difficulty-hint button {
+    background-color: #f44336;
+    margin: 5px;
+    transition: 0.2s all;
+}
+
+#difficulty-hint button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #letter {
+        font-size: 4em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .settings {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

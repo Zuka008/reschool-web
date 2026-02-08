@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davaleba 34 - Album Photos & User Info</title>
+  <link rel="stylesheet" href="davaleba34.css" />
+</head>
+<body onload="getAlbumPhotos(1)">
+  <h1>Album Photos</h1>
+  <div id="photo-list"></div>
+ 
+  <hr class="task-separator">
+
+  <h1>User Complete Information</h1>
+
+
+<input type="number" id="user-id-input" placeholder="Enter user ID (1-10)" />
+<button id="toggle-user-btn" onclick="fetchUserByInput()">Show User Info</button>
+
+
+  <div id="user-info"></div>
+
+  <script src="davaleba34.js"></script>
+</body>
+</html>

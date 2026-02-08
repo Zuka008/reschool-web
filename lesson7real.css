@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+nav {
+    background-color: darkcyan;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 30px;
+}
+
+.article_class1 {
+    margin: 20px 100px 20px 100px;
+    background-color: lightcyan;
+    padding: 25px;
+}
+
+.article_class2 {
+    margin: 20px 100px 20px 100px;
+    background-color: lightcyan;
+    padding: 35px;
+}
+
+h2 {
+    color: darkviolet;
+}
+
+.article_class3 {
+    margin: 20px 100px 20px 100px;
+    background-color: lightcyan;
+    padding: 35px;
+}
+
+footer {
+    background-color: darkcyan;
+}
+
+h4 {
+    text-align: center;
+ border: 0px;
+ padding: 30px;
+}

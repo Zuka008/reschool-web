@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="davaleba310.css" />
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <h1>Task Management – Error Handling Demo</h1>
+            <p class="subtitle">
+                Try/catch, custom errors, async retries, localStorage – all in one simple app.
+            </p>
+
+            <div class="status-row">
+                <span id="loading-indicator" class="status status-loading">⏳ Loading…</span>
+                <span id="notifications" class="status status-ok"></span>
+                <span id="errors" class="status status-error"></span>
+            </div>
+        </header>
+
+        <main class="layout">
+
+            <section class="card">
+                <h2>Add / Edit Task</h2>
+                <p class="card-caption">
+                    Title is required. Use priority and status to test error handling and filters.
+                </p>
+
+                <form id="task-form" class="form">
+                    <input type="hidden" id="task-id" />
+
+                    <div class="form-field">
+                        <label for="title">Title*</label>
+                        <input id="title" placeholder="e.g. Finish Davaleba 310" />
+                    </div>
+
+                    <div class="form-field">
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="Optional details..."></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="priority">Priority</label>
+                            <select id="priority">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="dueDate">Due date</label>
+                            <input type="date" id="dueDate" />
+                        </div>
+                    </div>
+
+                    <div class="button-row">
+                        <button type="submit" class="btn btn-primary">Save task</button>
+                        <button type="button" id="reset-form" class="btn btn-secondary">
+                            Reset form
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+
+            <section class="card">
+                <h2>Tasks</h2>
+                <p class="card-caption">
+                    Filter by priority and status. Async operations randomly fail to trigger error handling.
+                </p>
+
+                <div class="filters">
+                    <span>Filters:</span>
+                    <select id="filter-priority">
+                        <option value="all">All priorities</option>
+                        <option value="high">High only</option>
+                        <option value="medium">Medium only</option>
+                        <option value="low">Low only</option>
+                    </select>
+
+                    <select id="filter-status">
+                        <option value="all">All statuses</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+
+                    <button type="button" id="reload-tasks" class="btn btn-secondary">
+                        Reload
+                    </button>
+                </div>
+
+                <ul id="task-list" class="task-list"></ul>
+            </section>
+        </main>
+
+
+        <div id="confirm-modal" class="confirm-modal">
+            <div class="confirm-dialog">
+                <p id="confirm-text">Are you sure you want to delete this task?</p>
+                <div class="confirm-actions">
+                    <button id="confirm-cancel" class="btn btn-secondary">Cancel</button>
+                    <button id="confirm-ok" class="btn btn-primary btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="davaleba310.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>ჩვენი ინფორმაცია</legend>
+            <label for="firstname">სახელი:</label>
+            <input type="text" name="firstname" placeholder="name">
+            <input type="button" value="გაგზავნა"> <br> <br>
+
+            <label for="cars">ასარჩევი</label>
+            <select name="cars" id="cars">
+                <optgroup label="გერმანული1">
+                    <option value="1">ოპელი</option>
+                    <option value="2">აუდი</option>
+                </optgroup>
+
+                <optgroup label="გერმანული2">
+                    <option value="3">ბმვ</option>
+                    <option value="4">მერსედესი</option>
+                </optgroup>
+
+            </select> <br> <br>
+
+            <label for="textarea">კომენტარი</label> <br>
+            <textarea name="textarea" id="" rows="20" cols="30" placeholder="დაწერეთ თქვენი კომენტარი"></textarea> <br>
+            <br>
+
+            <h3>ეს არის ჩეკბოქსი</h3>
+            <input type="checkbox" name="car" id="car">
+            <label for="car">მანქანა</label> <br> <br>
+
+            <input type="checkbox" name="bike" id="car">
+            <label for="car">ველოსიპედი</label> <br> <br>
+
+            <h3>ეს არის რადიოს ტიპის ინფუთი</h3>
+            <input type="radio" name="age" id="">
+            <label for="age1">0-14</label>
+
+            <input type="radio" name="age" id="">
+            <label for="age2">15-18</label>
+
+            <input type="radio" name="age" id="">
+            <label for="age3">18+</label>
+
+            <h3>date type input</h3>
+            <input type="date" name="" id="">
+
+            <h3>input password</h3>
+            <input type="password" name="" id="">
+
+
+            <br><button type="submit">გაგზავნა</button>
+        </fieldset>
+
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: rgba(18, 75, 21, 1);
+
+}
+
+h1 {
+    margin: 10px;
+    padding: 30px;
+    /* border: 5px solid red; */
+    text-align: center;
+}
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.j4KdqaXpnhbN94WzVyHUhAHaE8&pid=Api&P=0&h=220");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+article {
+
+    background-color: seashell;
+    margin:20px 100px 20px 100px;
+    border-radius: 10px;
+}
+article h1 a {
+text-decoration: line-through;
+
+}

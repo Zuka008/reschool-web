@@ -1,0 +1,30 @@
+nav{
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    background-color: aquamarine;
+    width: 100%;
+    text-align: center;
+}
+
+
+.box {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.relative{
+    position: relative;
+}
+img.fixed{
+    position: fixed;
+    background-color: white;
+    bottom: 10px;
+    right: 10px;
+    width: 100%;
+    text-align: center;
+}

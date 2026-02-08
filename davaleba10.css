@@ -1,0 +1,72 @@
+.btn {
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    padding: 5px 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: brown;
+}
+
+div input {
+    border-color: blue;
+}
+
+div input:active {
+    border-color: chartreuse;
+    border: 15px;
+}
+
+.btn_2 {
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 6px;
+}
+
+.btn_2:focus {
+    background-color: gold;
+}
+
+.btn_2:hover {
+    background-color: orangered;
+}
+
+.box {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: black;
+    animation: motion 2s infinite ease-in-out;
+}
+
+@keyframes motion {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+.box2 {
+    margin: 40px;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    background-color: burlywood;
+    transition: all .5s ease-in-out;
+}
+
+.box2:hover {
+    transform: scale(3);
+    rotate: 360deg;
+    opacity: 0.01;
+}

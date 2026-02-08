@@ -1,0 +1,100 @@
+.box1 {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    /* animation: motion 5s infinite ease-in-out; */
+    position: relative;
+    background-color: blue;
+    transition: all .5s ease-in-out;
+}
+.box1:hover{
+    transform: scale(3);
+    background-color: black;
+    opacity: 0.5;
+}
+.btn{
+    background-color: green;
+    border: 0;
+    padding: 5px 15px;
+    color: whitesmoke;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(98, 228, 98);
+}
+
+.btn:focus{
+    border: 1px solid red;
+}
+
+.box2 p:last-child{
+    color: red;
+}
+.box2 p:first-child{
+    color: gray;
+}
+.box2 p:nth-child(2){
+    color: blueviolet ;
+}
+
+li:first-child::marker{
+    color: blue;
+}
+.box2 p{
+    padding: 5px 15px;
+    background-color: purple;
+    position: relative;
+}
+
+.box2 p:hover{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.box2 p::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: red;
+    top: 0;
+    left: -8px;
+}
+/* .button:active{
+    border: 3px solid yellow
+} */
+
+
+/* @keyframes motion {
+    0% {
+        background-color: aqua;
+        left: 0;
+    }
+
+    20% {
+        background-color: black;
+        left: 15%;
+    }
+
+    20% {
+        background-color: green;
+        left: 15%;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        background-color: purple;
+        left: 40%;
+    }
+
+    50% {
+        background-color: gray;
+        left: 40%;
+    }
+
+    100% {
+        background-color: red;
+        left: 80%;
+    }
+} */

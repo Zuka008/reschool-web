@@ -1,0 +1,154 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #14192c; 
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #e0e0e0; 
+}
+
+
+h1, h2, h3 {
+  color: #f0f0f0; 
+  margin-top: 10px;
+}
+
+#photo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+
+.photo-item {
+  background-color: #ffffff; 
+  color: #222; 
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.photo-item:hover {
+  transform: scale(1.05);
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.photo-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #222;
+}
+
+
+#first-five-titles {
+  margin-top: 40px;        
+  text-align: center;     
+}
+
+#first-five-titles h3 {
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+#first-five-titles ul {
+  list-style: decimal;
+  padding-left: 0;
+  display: inline-block;
+  text-align: left;
+  color: #e0e0e0; 
+  margin: 0;
+}
+
+#first-five-titles li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+ 
+.task-separator {
+  border: none;
+  height: 2px;
+  background-color: #4CAF50; 
+  margin: 50px 0; 
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+
+
+#user-info {
+  display: none; 
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #cfd8e7; 
+  color: #222; 
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#user-info h2, #user-info h3 {
+  color: #222; 
+  margin-bottom: 10px;
+}
+
+
+.user-post {
+  background-color: #dfe6f0; 
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  color: #222;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.user-post:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+}
+
+
+.post-comment {
+  background-color: #e7edf5; 
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #222;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-comment:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
